@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: rgb(1, 1, 1);
+  background: linear-gradient(90deg, rgb(1, 1, 1) 0%, rgb(0, 0, 0) 0%, rgba(19,6,31,1) 40%);
+  overflow: auto;
+}
+.app-container {
+  display: flex;
+}
+
+
+.content {
+  width: 60vw;
+  margin-left: 5% 0 6% 0;
+}
+
+.postcard {
+  margin: 6vw 20px 40px 5vw;
+  width: 60rem;
+}
+.likes-comments{
+  display: flex;
+}
+.hashtag {
+  margin: 0px 3px;
+}
+
+.reactions {
+  margin: 15px 0 0 0;
+}
+.postlist{
+  width: 20vw;
+}
+.summary{
+  display: flex;
+}
+.dp-list{
+  display: flex;
+}
+.dp-list li{
+list-style: none;
+margin-left: 1vw;
+}
+.dp-list li a{
+  text-decoration: none;
+}
+.dp-list li .insta{
+  color: rgb(254, 4, 75);
+}
+.dp-list li .whatsapp{
+  color: rgb(4, 254, 21);
+}
+
+@media (max-width: 455px){
+.postcard{
+  margin-left: 1vw;
+  margin: 6vw 20px 40px 5vw;
+ width: 16rem;
+}
+}
+
+
+/* Vidoes.jsx */
+/* Base styles */
+.video-player {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.video {
+  width: 80vw; /* Use viewport width for responsiveness */
+  max-width: 90vw; /* Adjust to fit within viewport width */
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  margin: 0 auto; /* Center the video */
+  margin-left: 3vw;
+}
+
+.Video-Title {
+  color: white;
+  text-align: center;
+  margin: 1em 0; /* Use em for responsive margin */
+  font-size: 2rem; /* Use rem for responsive font size */
+}
+
+@media (max-width: 768px) {
+  .video {
+    width: 90vw; /* Increase width for smaller screens */
+  }
+
+  .Video-Title {
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+    margin: 1.5em 0; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 455px) {
+  .video {
+    width: 95vw; /* Increase width further for very small screens */
+  }
+
+  .Video-Title {
+    font-size: 1.6rem; /* Further adjust font size */
+    margin: 2em 0; /* Further adjust margin */
+  }
+}
+
+
+
+
+/* Notification */
+
+.notify{
+  margin-top: 13vh;
+margin-left: 3vw;
+display: flex;
+flex-direction: column;
+}
+.nottybuton {
+  margin: 1vh 1.5vh 0 0;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255); 
+  color: black;/* Add semi-transparent white background */
+  backdrop-filter: blur(20px);
+}
+
+
+/* src/Chat.css */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 81vh;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15vh;
+  margin-left: 24vw;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.input-box {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+/* memes.css */
+
+.Post-container{
+  height: 80vh auto;
+  width: 80vw;
+  background: #fff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-top: 13vh;
+  margin-left: 10vw;
+}
+.Post-container .postImage{
+  margin: 4vh 0 0 5vw;
+  width: 80%;
+  object-fit: contain;
+  border: none;
+  border-radius: 5px;
+}
+.post-title{
+  margin: 0 0 0 5vw;
+}
+.post-description{
+  margin:1vh 0 0 4vw;
+}
+
+@media (max-width: 455px){
+  .Post-container{
+    height: 80vh auto;
+    width: 80vw;
+    background: #fff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-top: 13vh;
+    margin-left: 10vw;
+  }
+  .Post-container .postImage{
+    margin: 4vh 0 0 9vw;
+    width: 50%;
+    object-fit: contain;
+    border: none;
+    border-radius: 5px;
+  }
+  .post-title{
+    margin: 0 0 0 5vw;
+  }
+  .post-description{
+    margin:1vh 0 0 4vw;
+  }
+}
